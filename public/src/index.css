@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg-01: #222;
+  --bg-02: #333;
+  --SpaceLine: rgba(255, 255, 255, 0.3);
+  --col-01: #e2e2e2;
+  --col-02: #c1906d;
+}
