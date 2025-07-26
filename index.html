@@ -106,9 +106,73 @@
         </main>
       </nav>
 
-      <main class="main"></main>
+      <main class="main">
+        <div class="dashboard">
+          <!-- Cards de Resumo -->
+          <div class="cards">
+            <div class="card">
+              <h2>12</h2>
+              <p>Mensagens</p>
+            </div>
+            <div class="card">
+              <h2>5</h2>
+              <p>Notificações</p>
+            </div>
+            <div class="card">
+              <h2>8</h2>
+              <p>Amigos Online</p>
+            </div>
+          </div>
+
+          <!-- Gráfico e Atividades -->
+          <div class="grid-2">
+            <div class="ChartHead">
+              <header class="box-head">
+                <h3>Atividades da Semana</h3>
+
+                <select id="rangeSelect">
+                  <option value="week">Semana</option>
+                  <option value="month">Mês</option>
+                </select>
+              </header>
+
+              <main class="contentChart">
+                <div class="AttChart">
+                  <canvas id="activityChart" height="200" width="200"></canvas>
+                  <span id="countChart"></span>
+                </div>
+              </main>
+            </div>
+
+            <div class="activity">
+              <h3>Atividades Recentes</h3>
+              <ul>
+                <li>
+                  <span>Oliver</span> adicionou um novo amigo
+                  <time datetime="">há 2h</time>
+                </li>
+                <li>
+                  <span>Maria</span> curtiu seu post
+                  <time datetime="">há 4h</time>
+                </li>
+                <li>
+                  <span>Lucas</span> enviou uma mensagem
+                  <time datetime="">ontem</time>
+                </li>
+                <li>
+                  <span>Joana</span> comentou no seu feed
+                  <time datetime="">hoje, ás 10:00</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="/public/src/Chart.js"></script>
+    <script type="module" src="/public/src/app.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
